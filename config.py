@@ -8,9 +8,9 @@ import os;
 from keys import *
 from alpaca.trading.client import TradingClient
 
-BASE_URL = "https://paper-api.alpaca.markets";
+# BASE_URL = "https://paper-api.alpaca.markets";
 
-
+# Connect to trading client paper account
 trading_client = TradingClient(API_KEY_ID, SECRET_KEY, paper=True);
 
 

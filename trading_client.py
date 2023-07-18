@@ -31,6 +31,17 @@ print("COLUMN NAMES\n");
 print(df_positions.columns);
 
 
+
+#
+# Fetch current account information and store as an easy-read dataframe
+#
+
+df_account = pd.json_normalize(dict(trading_client.get_account())).T;
+
+print("ACCOUNT INFORMATION\n");
+print(df_account);
+
+
 # # This gets screwed up because each element of the resulting dataframe contains a (key,value) pair
 # positions = pd.DataFrame(trading_client.get_all_positions());
 # print(positions); print("\n");

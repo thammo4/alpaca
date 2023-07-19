@@ -38,7 +38,7 @@ print(df_positions.columns);
 
 df_account = pd.json_normalize(dict(trading_client.get_account())).T;
 
-print("ACCOUNT INFORMATION\n");
+print("\nACCOUNT INFORMATION");
 print(df_account);
 
 

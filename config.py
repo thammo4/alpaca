@@ -15,4 +15,4 @@ trading_client = TradingClient(API_KEY_ID, SECRET_KEY, paper=True);
 
 
 # confirm successful connection
-print(trading_client);
+# print(trading_client);
